@@ -25,9 +25,9 @@ npm run build
 
 Serve the generated `dist` folder with a static web server. The root HTML loads `/app.js`, so opening it directly as a local file is not supported.
 
-## Connect the existing Vercel project
+## Vercel deployment
 
-In the existing `kitchen-log-vercel` Vercel project, open **Settings → Git → Connect Git Repository** and choose **abidzafar000/Kitchen-log**. Use `main` as the production branch.
+The existing `kitchen-log-vercel` Vercel project is connected to **abidzafar000/Kitchen-log**. The connection was confirmed in Vercel's Git settings. Use `main` as the production branch.
 
 The included `vercel.json` supplies:
 
@@ -37,7 +37,7 @@ The included `vercel.json` supplies:
 - Output directory: `dist`
 - Root directory: repository root
 
-After connecting, verify the new deployment before relying on automatic updates. Creating this repository does not itself establish the Vercel Git connection.
+Pushes to the configured production branch can trigger production deployments. Check the commit's Vercel status and the project's Deployments page before considering an update live.
 
 ## Database and authentication
 
